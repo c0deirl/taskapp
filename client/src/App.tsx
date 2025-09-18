@@ -22,7 +22,19 @@ import { LoginPage } from './pages/LoginPage';
 function AppContent() {
   const { user, isLoading: authLoading } = useAuth();
   const [currentPage, setCurrentPage] = useState("all");
-
+  const { data: tasks = [], isLoading: tasksLoading, error } = useQuery({
+    queryKey: ['tasks'],
+    queryFn: () => user ? taskApi.getTasks() : Promise.resolve([]),
+    enabled: !!user,
+    retry: (failureCount, error: any) => {
+      // Don't retry on 401 unauthorized
+      if (error.response?.status === 401) return false;
+      return failureCount < 3;
+    }
+  });
+  const [editingTask, setEditingTask] = useState<Task | null>(null);
+  
+  // Handle authentication states
   if (authLoading) {
     return (
       <div className="min-h-screen flex items-center justify-center">
@@ -34,16 +46,7 @@ function AppContent() {
   if (!user) {
     return <LoginPage />;
   }
-  const { data: tasks = [], isLoading, error } = useQuery({
-    queryKey: ['tasks'],
-    queryFn: taskApi.getTasks,
-    retry: (failureCount, error: any) => {
-      // Don't retry on 401 unauthorized
-      if (error.response?.status === 401) return false;
-      return failureCount < 3;
-    }
-  });
-  const [editingTask, setEditingTask] = useState<Task | null>(null);
+
   const [adminSettings, setAdminSettings] = useState<AdminSettings>({
     emailEnabled: false,
     smtpHost: '',
@@ -179,7 +182,7 @@ function AppContent() {
           />
         );
       default:
-        if (isLoading) {
+        if (tasksLoading) {
           return <div className="flex items-center justify-center p-8">Loading tasks...</div>;
         }
         
