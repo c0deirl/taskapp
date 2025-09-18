@@ -42,7 +42,7 @@ function AppContent() {
     appTitle: 'TaskFlow',
   });
 
-  // Query hook with authentication dependency
+  // Query and mutation hooks
   const { data: tasks = [], isLoading: tasksLoading, error } = useQuery({
     queryKey: ['tasks'],
     queryFn: () => user ? taskApi.getTasks() : Promise.resolve([]),
@@ -53,35 +53,7 @@ function AppContent() {
       return failureCount < 3;
     }
   });
-  
-  // Handle authentication states
-  if (authLoading) {
-    return (
-      <div className="min-h-screen flex items-center justify-center">
-        <p>Loading...</p>
-      </div>
-    );
-  }
 
-  if (!user) {
-    return <LoginPage />;
-  }
-
-  // Calculate task counts for sidebar
-  const taskCounts = {
-    all: tasks.length,
-    pending: tasks.filter(t => !t.completed).length,
-    completed: tasks.filter(t => t.completed).length,
-    high: tasks.filter(t => t.priority === 'high' && !t.completed).length,
-  };
-
-  // Navigation handler
-  const handleNavigate = (page: string) => {
-    setCurrentPage(page);
-    setEditingTask(null);
-  };
-
-  // Task mutations
   const toggleTaskMutation = useMutation({
     mutationFn: ({ id, completed }: { id: string; completed: boolean }) => 
       taskApi.toggleTask(id, completed),
@@ -114,6 +86,35 @@ function AppContent() {
       queryClient.invalidateQueries({ queryKey: ['tasks'] });
     }
   });
+  
+  // Handle authentication states
+  if (authLoading) {
+    return (
+      <div className="min-h-screen flex items-center justify-center">
+        <p>Loading...</p>
+      </div>
+    );
+  }
+
+  if (!user) {
+    return <LoginPage />;
+  }
+
+  // Calculate task counts for sidebar
+  const taskCounts = {
+    all: tasks.length,
+    pending: tasks.filter(t => !t.completed).length,
+    completed: tasks.filter(t => t.completed).length,
+    high: tasks.filter(t => t.priority === 'high' && !t.completed).length,
+  };
+
+  // Navigation handler
+  const handleNavigate = (page: string) => {
+    setCurrentPage(page);
+    setEditingTask(null);
+  };
+
+  // Task mutations
 
   // Task handlers
   const handleToggleTask = (id: string) => {
