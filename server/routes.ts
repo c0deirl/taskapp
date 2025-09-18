@@ -51,7 +51,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
   });
 
   // GET /api/tasks/:id - Get a specific task
-  app.get("/api/tasks/:id", async (req: Request, res: Response) => {
+  app.get("/api/tasks/:id", requireAuth, async (req: Request, res: Response) => {
     try {
       const taskId = req.params.id;
       const task = await storage.getTask(taskId);
@@ -62,13 +62,17 @@ export async function registerRoutes(app: Express): Promise<Server> {
       
       return res.status(200).json(task);
     } catch (error) {
-      console.error("Error fetching task:", error);
+      logger.error("Error fetching task:", {
+        userId: req.session.userId,
+        taskId: req.params.id,
+        error: error instanceof Error ? error.message : String(error)
+      });
       return res.status(500).json({ message: "Failed to fetch task" });
     }
   });
 
   // POST /api/tasks - Create a new task
-  app.post("/api/tasks", async (req: Request, res: Response) => {
+  app.post("/api/tasks", requireAuth, async (req: Request, res: Response) => {
     try {
       const validatedData = insertTaskSchema.parse(req.body);
       logger.debug('Creating new task', {
@@ -98,7 +102,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
   });
 
   // PATCH /api/tasks/:id - Update a task
-  app.patch("/api/tasks/:id", async (req: Request, res: Response) => {
+  app.patch("/api/tasks/:id", requireAuth, async (req: Request, res: Response) => {
     try {
       const taskId = req.params.id;
       const validatedData = updateTaskSchema.parse(req.body);
@@ -143,7 +147,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
   });
 
   // DELETE /api/tasks/:id - Delete a task
-  app.delete("/api/tasks/:id", async (req: Request, res: Response) => {
+  app.delete("/api/tasks/:id", requireAuth, async (req: Request, res: Response) => {
     try {
       const taskId = req.params.id;
       logger.debug('Attempting to delete task', {
