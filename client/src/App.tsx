@@ -66,7 +66,6 @@ function AppContent() {
   if (!user) {
     return <LoginPage />;
   }
-  });
 
   // Calculate task counts for sidebar
   const taskCounts = {
