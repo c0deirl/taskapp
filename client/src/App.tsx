@@ -20,33 +20,12 @@ import { AuthProvider, useAuth } from './lib/AuthContext';
 import { LoginPage } from './pages/LoginPage';
 
 function AppContent() {
+  // Auth state
   const { user, isLoading: authLoading } = useAuth();
-  const [currentPage, setCurrentPage] = useState("all");
-  const { data: tasks = [], isLoading: tasksLoading, error } = useQuery({
-    queryKey: ['tasks'],
-    queryFn: () => user ? taskApi.getTasks() : Promise.resolve([]),
-    enabled: !!user,
-    retry: (failureCount, error: any) => {
-      // Don't retry on 401 unauthorized
-      if (error.response?.status === 401) return false;
-      return failureCount < 3;
-    }
-  });
-  const [editingTask, setEditingTask] = useState<Task | null>(null);
   
-  // Handle authentication states
-  if (authLoading) {
-    return (
-      <div className="min-h-screen flex items-center justify-center">
-        <p>Loading...</p>
-      </div>
-    );
-  }
-
-  if (!user) {
-    return <LoginPage />;
-  }
-
+  // All state hooks must be declared before any conditional returns
+  const [currentPage, setCurrentPage] = useState("all");
+  const [editingTask, setEditingTask] = useState<Task | null>(null);
   const [adminSettings, setAdminSettings] = useState<AdminSettings>({
     emailEnabled: false,
     smtpHost: '',
@@ -61,6 +40,32 @@ function AppContent() {
     ntfyTopic: '',
     ntfyPriority: 'default',
     appTitle: 'TaskFlow',
+  });
+
+  // Query hook with authentication dependency
+  const { data: tasks = [], isLoading: tasksLoading, error } = useQuery({
+    queryKey: ['tasks'],
+    queryFn: () => user ? taskApi.getTasks() : Promise.resolve([]),
+    enabled: !!user,
+    retry: (failureCount, error: any) => {
+      // Don't retry on 401 unauthorized
+      if (error.response?.status === 401) return false;
+      return failureCount < 3;
+    }
+  });
+  
+  // Handle authentication states
+  if (authLoading) {
+    return (
+      <div className="min-h-screen flex items-center justify-center">
+        <p>Loading...</p>
+      </div>
+    );
+  }
+
+  if (!user) {
+    return <LoginPage />;
+  }
   });
 
   // Calculate task counts for sidebar
