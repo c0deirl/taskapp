@@ -15,11 +15,10 @@ import { TaskForm } from "@/components/TaskForm";
 import { AdminPanel, type AdminSettings } from "@/components/AdminPanel";
 import { type Task } from "@/components/TaskCard";
 
-function App() {
+function AppContent() {
   const [currentPage, setCurrentPage] = useState("all");
   const { data: tasks = [], isLoading, error } = useQuery({
     queryKey: ['tasks'],
-    queryClient,
     queryFn: taskApi.getTasks
   });
   const [editingTask, setEditingTask] = useState<Task | null>(null);
@@ -245,6 +244,19 @@ function App() {
               </div>
             </div>
           </SidebarProvider>
+          <Toaster />
+        </ThemeProvider>
+      </TooltipProvider>
+    </QueryClientProvider>
+  );
+}
+
+function App() {
+  return (
+    <QueryClientProvider client={queryClient}>
+      <TooltipProvider>
+        <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
+          <AppContent />
           <Toaster />
         </ThemeProvider>
       </TooltipProvider>
