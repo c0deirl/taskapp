@@ -34,16 +34,17 @@ if (!process.env.NODE_ENV?.includes('production')) {
 }
 
 // Create a persistent PostgreSQL connection
+let sql;
 try {
-  const sql = neon(process.env.DATABASE_URL || "", {
+  sql = neon(process.env.DATABASE_URL || "", {
     poolSize: 1,
     connectionTimeoutMillis: 5000,
   });
-  
-  // Initialize Drizzle with the connection
-  export const db = drizzle(sql, { schema });
   logger.info('Database connection established successfully');
 } catch (error) {
   logger.error('Failed to establish database connection:', { error });
   throw error;
 }
+
+// Initialize Drizzle with the connection
+export const db = drizzle(sql, { schema });
