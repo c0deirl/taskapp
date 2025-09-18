@@ -5,12 +5,14 @@ import { insertTaskSchema, updateTaskSchema } from "@shared/schema";
 import { z } from "zod";
 import { logger } from './db';
 
+
 // Add type definition for session
 declare module 'express-session' {
   interface SessionData {
     userId: string;
   }
 }
+
 
 export async function registerRoutes(app: Express): Promise<Server> {
   // Task API endpoints
