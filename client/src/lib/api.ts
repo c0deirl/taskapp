@@ -6,6 +6,18 @@ const api = axios.create({
   withCredentials: true
 });
 
+// Add response interceptor to handle unauthorized responses
+api.interceptors.response.use(
+  (response) => response,
+  (error) => {
+    if (error.response?.status === 401) {
+      // Redirect to login page if unauthorized
+      window.location.href = '/login';
+    }
+    return Promise.reject(error);
+  }
+);
+
 export type CreateTaskData = Omit<Task, 'id' | 'createdAt' | 'completed'>;
 export type UpdateTaskData = Partial<CreateTaskData>;
 

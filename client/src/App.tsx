@@ -13,13 +13,35 @@ import { AppSidebar } from "@/components/AppSidebar";
 import { TaskList } from "@/components/TaskList";
 import { TaskForm } from "@/components/TaskForm";
 import { AdminPanel, type AdminSettings } from "@/components/AdminPanel";
+import { LogOut } from "lucide-react";
 import { type Task } from "@/components/TaskCard";
 
+import { AuthProvider, useAuth } from './lib/AuthContext';
+import { LoginPage } from './pages/LoginPage';
+
 function AppContent() {
+  const { user, isLoading: authLoading } = useAuth();
   const [currentPage, setCurrentPage] = useState("all");
+
+  if (authLoading) {
+    return (
+      <div className="min-h-screen flex items-center justify-center">
+        <p>Loading...</p>
+      </div>
+    );
+  }
+
+  if (!user) {
+    return <LoginPage />;
+  }
   const { data: tasks = [], isLoading, error } = useQuery({
     queryKey: ['tasks'],
-    queryFn: taskApi.getTasks
+    queryFn: taskApi.getTasks,
+    retry: (failureCount, error: any) => {
+      // Don't retry on 401 unauthorized
+      if (error.response?.status === 401) return false;
+      return failureCount < 3;
+    }
   });
   const [editingTask, setEditingTask] = useState<Task | null>(null);
   const [adminSettings, setAdminSettings] = useState<AdminSettings>({
@@ -229,12 +251,25 @@ function AppContent() {
                 {/* Header */}
                 <header className="flex items-center justify-between p-4 border-b bg-background" data-testid="header-main">
                   <div className="flex items-center gap-4">
+                    <h1 className="text-2xl font-bold">{getPageTitle()}</h1>
+                    <span className="text-sm text-muted-foreground">
+                      {user.username}
+                    </span>
                     <SidebarTrigger data-testid="button-sidebar-toggle" />
                     <h1 className="text-lg font-semibold" data-testid="text-page-title">
                       {getPageTitle()}
                     </h1>
                   </div>
-                  <ThemeToggle />
+                  <div className="flex items-center gap-2">
+                    <ThemeToggle />
+                    <Button
+                      variant="outline"
+                      size="icon"
+                      onClick={() => auth.logout()}
+                    >
+                      <LogOut className="h-4 w-4" />
+                    </Button>
+                  </div>
                 </header>
                 
                 {/* Main Content */}
@@ -254,12 +289,14 @@ function AppContent() {
 function App() {
   return (
     <QueryClientProvider client={queryClient}>
-      <TooltipProvider>
-        <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
-          <AppContent />
-          <Toaster />
-        </ThemeProvider>
-      </TooltipProvider>
+      <AuthProvider>
+        <TooltipProvider>
+          <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
+            <AppContent />
+            <Toaster />
+          </ThemeProvider>
+        </TooltipProvider>
+      </AuthProvider>
     </QueryClientProvider>
   );
 }
