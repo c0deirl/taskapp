@@ -15,6 +15,7 @@ import { TaskForm } from "@/components/TaskForm";
 import { AdminPanel, type AdminSettings } from "@/components/AdminPanel";
 import { LogOut } from "lucide-react";
 import { type Task } from "@/components/TaskCard";
+import { Button } from "@/components/ui/button";
 
 import { AuthProvider, useAuth } from './lib/AuthContext';
 import { LoginPage } from './pages/LoginPage';
