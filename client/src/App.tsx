@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { queryClient } from "./lib/queryClient";
-import { QueryClientProvider } from "@tanstack/react-query";
+import { QueryClientProvider, useQuery, useMutation } from "@tanstack/react-query";
+import { taskApi } from "./lib/api";
 import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar";
@@ -15,55 +16,12 @@ import { AdminPanel, type AdminSettings } from "@/components/AdminPanel";
 import { type Task } from "@/components/TaskCard";
 
 function App() {
-  // TODO: remove mock functionality
   const [currentPage, setCurrentPage] = useState("all");
-  const [tasks, setTasks] = useState<Task[]>([
-    {
-      id: '1',
-      title: 'Complete project documentation',
-      description: 'Write comprehensive documentation for the new task management system including API docs and user guide',
-      priority: 'high',
-      dueDate: new Date(Date.now() + 86400000),
-      reminderDate: new Date(Date.now() + 43200000),
-      completed: false,
-      createdAt: new Date(Date.now() - 86400000),
-    },
-    {
-      id: '2',
-      title: 'Review pull requests',
-      description: 'Review pending PRs for the authentication module',
-      priority: 'medium',
-      completed: true,
-      createdAt: new Date(Date.now() - 3600000),
-    },
-    {
-      id: '3',
-      title: 'Schedule team meeting',
-      description: 'Plan next sprint and discuss project roadmap',
-      priority: 'low',
-      dueDate: new Date(Date.now() - 86400000),
-      completed: false,
-      createdAt: new Date(Date.now() - 172800000),
-    },
-    {
-      id: '4',
-      title: 'Update dependencies',
-      description: 'Upgrade all npm packages to latest versions',
-      priority: 'low',
-      dueDate: new Date(Date.now() + 172800000),
-      completed: false,
-      createdAt: new Date(Date.now() - 172800000),
-    },
-    {
-      id: '5',
-      title: 'Write unit tests',
-      description: 'Add comprehensive test coverage for payment service',
-      priority: 'high',
-      dueDate: new Date(Date.now() - 86400000),
-      completed: false,
-      createdAt: new Date(Date.now() - 259200000),
-    }
-  ]);
+  const { data: tasks = [], isLoading, error } = useQuery({
+    queryKey: ['tasks'],
+    queryClient,
+    queryFn: taskApi.getTasks
+  });
   const [editingTask, setEditingTask] = useState<Task | null>(null);
   const [adminSettings, setAdminSettings] = useState<AdminSettings>({
     emailEnabled: false,
@@ -95,11 +53,46 @@ function App() {
     setEditingTask(null);
   };
 
+  // Task mutations
+  const toggleTaskMutation = useMutation({
+    mutationFn: ({ id, completed }: { id: string; completed: boolean }) => 
+      taskApi.toggleTask(id, completed),
+    onSuccess: () => {
+      queryClient.invalidateQueries({ queryKey: ['tasks'] });
+    }
+  });
+
+  const createTaskMutation = useMutation({
+    mutationFn: taskApi.createTask,
+    onSuccess: () => {
+      queryClient.invalidateQueries({ queryKey: ['tasks'] });
+      setCurrentPage('all');
+    }
+  });
+
+  const updateTaskMutation = useMutation({
+    mutationFn: ({ id, task }: { id: string; task: any }) => 
+      taskApi.updateTask(id, task),
+    onSuccess: () => {
+      queryClient.invalidateQueries({ queryKey: ['tasks'] });
+      setEditingTask(null);
+      setCurrentPage('all');
+    }
+  });
+
+  const deleteTaskMutation = useMutation({
+    mutationFn: taskApi.deleteTask,
+    onSuccess: () => {
+      queryClient.invalidateQueries({ queryKey: ['tasks'] });
+    }
+  });
+
   // Task handlers
   const handleToggleTask = (id: string) => {
-    setTasks(prev => prev.map(task => 
-      task.id === id ? { ...task, completed: !task.completed } : task
-    ));
+    const task = tasks.find(t => t.id === id);
+    if (task) {
+      toggleTaskMutation.mutate({ id, completed: !task.completed });
+    }
   };
 
   const handleEditTask = (task: Task) => {
@@ -108,29 +101,16 @@ function App() {
   };
 
   const handleDeleteTask = (id: string) => {
-    setTasks(prev => prev.filter(task => task.id !== id));
+    deleteTaskMutation.mutate(id);
   };
 
   const handleCreateTask = (taskData: Omit<Task, 'id' | 'createdAt' | 'completed'>) => {
-    const newTask: Task = {
-      ...taskData,
-      id: Date.now().toString(),
-      completed: false,
-      createdAt: new Date(),
-    };
-    setTasks(prev => [newTask, ...prev]);
-    setCurrentPage('all');
+    createTaskMutation.mutate(taskData);
   };
 
   const handleUpdateTask = (taskData: Omit<Task, 'id' | 'createdAt' | 'completed'>) => {
     if (!editingTask) return;
-    setTasks(prev => prev.map(task => 
-      task.id === editingTask.id 
-        ? { ...task, ...taskData }
-        : task
-    ));
-    setEditingTask(null);
-    setCurrentPage('all');
+    updateTaskMutation.mutate({ id: editingTask.id, task: taskData });
   };
 
   const handleCancelEdit = () => {
@@ -178,6 +158,24 @@ function App() {
           />
         );
       default:
+        if (isLoading) {
+          return <div className="flex items-center justify-center p-8">Loading tasks...</div>;
+        }
+        
+        if (error) {
+          return (
+            <div className="flex flex-col items-center justify-center p-8 text-red-500">
+              <p>Error loading tasks</p>
+              <button 
+                className="mt-4 px-4 py-2 bg-red-100 rounded-md hover:bg-red-200"
+                onClick={() => queryClient.invalidateQueries({ queryKey: ['tasks'] })}
+              >
+                Retry
+              </button>
+            </div>
+          );
+        }
+
         return (
           <TaskList 
             tasks={tasks}
