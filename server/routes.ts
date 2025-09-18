@@ -1,4 +1,4 @@
-import type { Express, Request, Response } from "express";
+import type { Express, Request, Response, NextFunction } from "express";
 import { createServer, type Server } from "http";
 import { storage } from "./storage";
 import { insertTaskSchema, updateTaskSchema } from "@shared/schema";
@@ -13,17 +13,18 @@ declare module 'express-session' {
 
 export async function registerRoutes(app: Express): Promise<Server> {
   // Task API endpoints
-  // GET /api/tasks - Get all tasks for a user
-  app.get("/api/tasks", async (req: Request, res: Response) => {
+  // Middleware to ensure user is authenticated
+  const requireAuth = (req: Request, res: Response, next: NextFunction) => {
+    if (!req.session.userId) {
+      return res.status(401).json({ message: "Unauthorized" });
+    }
+    next();
+  };
+
+  // GET /api/tasks - Get all tasks for the authenticated user
+  app.get("/api/tasks", requireAuth, async (req: Request, res: Response) => {
     try {
-      // In a real app, you would get the userId from the authenticated user
-      // For now, we'll use a query parameter for testing
-      const userId = req.query.userId as string;
-      if (!userId) {
-        return res.status(400).json({ message: "userId is required" });
-      }
-      
-      const tasks = await storage.getTasks(userId);
+      const tasks = await storage.getTasks(req.session.userId);
       return res.status(200).json(tasks);
     } catch (error) {
       console.error("Error fetching tasks:", error);
