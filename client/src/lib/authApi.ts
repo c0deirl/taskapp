@@ -11,7 +11,7 @@ export interface User {
 }
 
 // Use the same base URL as the main API
-const API_BASE_URL = process.env.VITE_API_URL || '/api';
+const API_BASE_URL = import.meta.env.VITE_API_URL || '/api';
 
 const authApi = axios.create({
   baseURL: `${API_BASE_URL}/auth`,

@@ -3,7 +3,7 @@ import { type Task } from '@/components/TaskCard';
 import { auth } from './authApi';
 
 // Get the API base URL from environment or use the current origin
-const API_BASE_URL = process.env.VITE_API_URL || '/api';
+const API_BASE_URL = import.meta.env.VITE_API_URL || '/api';
 
 const api = axios.create({
   baseURL: API_BASE_URL,
