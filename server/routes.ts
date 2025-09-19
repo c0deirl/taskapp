@@ -15,6 +15,55 @@ declare module 'express-session' {
 
 
 export async function registerRoutes(app: Express): Promise<Server> {
+  // Auth API endpoints
+  app.post("/api/auth/login", async (req: Request, res: Response) => {
+    const { username, password } = req.body;
+    
+    // For demo purposes, accept any username/password
+    // In production, you would validate against a database
+    req.session.userId = username;
+    
+    logger.info('User logged in successfully', {
+      username,
+      sessionId: req.session.id
+    });
+    
+    return res.status(200).json({
+      id: username,
+      username
+    });
+  });
+
+  app.post("/api/auth/logout", (req: Request, res: Response) => {
+    const userId = req.session.userId;
+    req.session.destroy((err) => {
+      if (err) {
+        logger.error('Error destroying session', {
+          userId,
+          error: err.message
+        });
+        return res.status(500).json({ message: "Failed to logout" });
+      }
+      logger.info('User logged out successfully', { userId });
+      res.status(200).json({ message: "Logged out successfully" });
+    });
+  });
+
+  app.get("/api/auth/user", (req: Request, res: Response) => {
+    if (!req.session.userId) {
+      return res.status(401).json({ message: "Not authenticated" });
+    }
+    
+    logger.debug('User session retrieved', {
+      userId: req.session.userId
+    });
+    
+    return res.status(200).json({
+      id: req.session.userId,
+      username: req.session.userId
+    });
+  });
+
   // Task API endpoints
   // Middleware to ensure user is authenticated
   const requireAuth = (req: Request, res: Response, next: NextFunction) => {
