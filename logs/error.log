@@ -1,0 +1,57 @@
+{"error":"Cannot access 'tasks2' before initialization","level":"error","message":"Failed to fetch tasks","timestamp":"2025-09-19T15:18:35.936Z","userId":"admin"}
+{"error":"Cannot access 'tasks2' before initialization","level":"error","message":"Failed to fetch tasks","timestamp":"2025-09-19T15:18:35.936Z","userId":"admin"}
+{"error":"Cannot access 'tasks2' before initialization","level":"error","message":"Failed to fetch tasks","timestamp":"2025-09-19T15:18:36.948Z","userId":"admin"}
+{"error":"Cannot access 'tasks2' before initialization","level":"error","message":"Failed to fetch tasks","timestamp":"2025-09-19T15:18:36.948Z","userId":"admin"}
+{"error":"Cannot access 'tasks2' before initialization","level":"error","message":"Failed to fetch tasks","timestamp":"2025-09-19T15:18:38.954Z","userId":"admin"}
+{"error":"Cannot access 'tasks2' before initialization","level":"error","message":"Failed to fetch tasks","timestamp":"2025-09-19T15:18:38.954Z","userId":"admin"}
+{"error":"Cannot access 'tasks2' before initialization","level":"error","message":"Failed to fetch tasks","timestamp":"2025-09-19T15:18:42.961Z","userId":"admin"}
+{"error":"Cannot access 'tasks2' before initialization","level":"error","message":"Failed to fetch tasks","timestamp":"2025-09-19T15:18:42.961Z","userId":"admin"}
+{"error":"Cannot access 'tasks2' before initialization","level":"error","message":"Failed to fetch tasks","timestamp":"2025-09-19T15:56:17.187Z","userId":"admin"}
+{"error":"Cannot access 'tasks2' before initialization","level":"error","message":"Failed to fetch tasks","timestamp":"2025-09-19T15:56:17.188Z","userId":"admin"}
+{"error":"Cannot access 'tasks2' before initialization","level":"error","message":"Failed to fetch tasks","timestamp":"2025-09-19T15:56:18.195Z","userId":"admin"}
+{"error":"Cannot access 'tasks2' before initialization","level":"error","message":"Failed to fetch tasks","timestamp":"2025-09-19T15:56:18.195Z","userId":"admin"}
+{"error":"Cannot access 'tasks2' before initialization","level":"error","message":"Failed to fetch tasks","timestamp":"2025-09-19T15:56:20.202Z","userId":"admin"}
+{"error":"Cannot access 'tasks2' before initialization","level":"error","message":"Failed to fetch tasks","timestamp":"2025-09-19T15:56:20.202Z","userId":"admin"}
+{"error":"Cannot access 'tasks2' before initialization","level":"error","message":"Failed to fetch tasks","timestamp":"2025-09-19T15:56:24.209Z","userId":"admin"}
+{"error":"Cannot access 'tasks2' before initialization","level":"error","message":"Failed to fetch tasks","timestamp":"2025-09-19T15:56:24.209Z","userId":"admin"}
+{"error":"client.query is not a function","level":"error","message":"Failed to fetch tasks","timestamp":"2025-09-19T16:27:02.320Z","userId":"admin"}
+{"error":"client.query is not a function","level":"error","message":"Failed to fetch tasks","timestamp":"2025-09-19T16:27:02.320Z","userId":"admin"}
+{"error":"client.query is not a function","level":"error","message":"Failed to fetch tasks","timestamp":"2025-09-19T16:27:03.331Z","userId":"admin"}
+{"error":"client.query is not a function","level":"error","message":"Failed to fetch tasks","timestamp":"2025-09-19T16:27:03.331Z","userId":"admin"}
+{"error":"client.query is not a function","level":"error","message":"Failed to fetch tasks","timestamp":"2025-09-19T16:27:05.338Z","userId":"admin"}
+{"error":"client.query is not a function","level":"error","message":"Failed to fetch tasks","timestamp":"2025-09-19T16:27:05.338Z","userId":"admin"}
+{"error":"client.query is not a function","level":"error","message":"Failed to fetch tasks","timestamp":"2025-09-19T16:27:09.345Z","userId":"admin"}
+{"error":"client.query is not a function","level":"error","message":"Failed to fetch tasks","timestamp":"2025-09-19T16:27:09.345Z","userId":"admin"}
+{"error":{"code":"ECONNREFUSED"},"level":"error","message":"Failed to establish database connection:","timestamp":"2025-09-19T16:37:51.024Z"}
+{"error":"FOREIGN KEY constraint failed","level":"error","message":"Failed to create task","timestamp":"2025-09-19T17:54:48.671Z","userId":"admin"}
+{"error":"FOREIGN KEY constraint failed","level":"error","message":"Failed to create task","timestamp":"2025-09-19T17:54:48.671Z","userId":"admin"}
+{"error":"FOREIGN KEY constraint failed","level":"error","message":"Failed to create task","timestamp":"2025-09-19T17:54:49.681Z","userId":"admin"}
+{"error":"FOREIGN KEY constraint failed","level":"error","message":"Failed to create task","timestamp":"2025-09-19T17:54:49.682Z","userId":"admin"}
+{"error":"FOREIGN KEY constraint failed","level":"error","message":"Failed to create task","timestamp":"2025-09-19T17:54:53.469Z","userId":"admin"}
+{"error":"FOREIGN KEY constraint failed","level":"error","message":"Failed to create task","timestamp":"2025-09-19T17:54:53.469Z","userId":"admin"}
+{"error":"FOREIGN KEY constraint failed","level":"error","message":"Failed to create task","timestamp":"2025-09-19T17:54:54.478Z","userId":"admin"}
+{"error":"FOREIGN KEY constraint failed","level":"error","message":"Failed to create task","timestamp":"2025-09-19T17:54:54.478Z","userId":"admin"}
+{"error":"no such column: \"priority\" - should this be a string literal in single-quotes?","level":"error","message":"Failed to fetch tasks","timestamp":"2025-09-19T19:17:27.294Z","userId":"65fbe574-c375-465f-ac1c-6ef78b42d4a2"}
+{"error":"no such column: \"priority\" - should this be a string literal in single-quotes?","level":"error","message":"Failed to fetch tasks","timestamp":"2025-09-19T19:17:27.295Z","userId":"65fbe574-c375-465f-ac1c-6ef78b42d4a2"}
+{"error":"no such column: \"priority\" - should this be a string literal in single-quotes?","level":"error","message":"Failed to fetch tasks","timestamp":"2025-09-19T19:17:28.311Z","userId":"65fbe574-c375-465f-ac1c-6ef78b42d4a2"}
+{"error":"no such column: \"priority\" - should this be a string literal in single-quotes?","level":"error","message":"Failed to fetch tasks","timestamp":"2025-09-19T19:17:28.312Z","userId":"65fbe574-c375-465f-ac1c-6ef78b42d4a2"}
+{"error":"no such column: \"priority\" - should this be a string literal in single-quotes?","level":"error","message":"Failed to fetch tasks","timestamp":"2025-09-19T19:17:30.319Z","userId":"65fbe574-c375-465f-ac1c-6ef78b42d4a2"}
+{"error":"no such column: \"priority\" - should this be a string literal in single-quotes?","level":"error","message":"Failed to fetch tasks","timestamp":"2025-09-19T19:17:30.319Z","userId":"65fbe574-c375-465f-ac1c-6ef78b42d4a2"}
+{"error":"no such column: \"priority\" - should this be a string literal in single-quotes?","level":"error","message":"Failed to fetch tasks","timestamp":"2025-09-19T19:17:34.326Z","userId":"65fbe574-c375-465f-ac1c-6ef78b42d4a2"}
+{"error":"no such column: \"priority\" - should this be a string literal in single-quotes?","level":"error","message":"Failed to fetch tasks","timestamp":"2025-09-19T19:17:34.326Z","userId":"65fbe574-c375-465f-ac1c-6ef78b42d4a2"}
+{"error":"no such column: \"priority\" - should this be a string literal in single-quotes?","level":"error","message":"Failed to fetch tasks","timestamp":"2025-09-19T19:17:58.511Z","userId":"65fbe574-c375-465f-ac1c-6ef78b42d4a2"}
+{"error":"no such column: \"priority\" - should this be a string literal in single-quotes?","level":"error","message":"Failed to fetch tasks","timestamp":"2025-09-19T19:17:58.511Z","userId":"65fbe574-c375-465f-ac1c-6ef78b42d4a2"}
+{"error":"no such column: \"priority\" - should this be a string literal in single-quotes?","level":"error","message":"Failed to fetch tasks","timestamp":"2025-09-19T19:17:59.518Z","userId":"65fbe574-c375-465f-ac1c-6ef78b42d4a2"}
+{"error":"no such column: \"priority\" - should this be a string literal in single-quotes?","level":"error","message":"Failed to fetch tasks","timestamp":"2025-09-19T19:17:59.518Z","userId":"65fbe574-c375-465f-ac1c-6ef78b42d4a2"}
+{"error":"no such column: \"priority\" - should this be a string literal in single-quotes?","level":"error","message":"Failed to fetch tasks","timestamp":"2025-09-19T19:18:01.525Z","userId":"65fbe574-c375-465f-ac1c-6ef78b42d4a2"}
+{"error":"no such column: \"priority\" - should this be a string literal in single-quotes?","level":"error","message":"Failed to fetch tasks","timestamp":"2025-09-19T19:18:01.526Z","userId":"65fbe574-c375-465f-ac1c-6ef78b42d4a2"}
+{"error":"no such column: \"priority\" - should this be a string literal in single-quotes?","level":"error","message":"Failed to fetch tasks","timestamp":"2025-09-19T19:18:05.533Z","userId":"65fbe574-c375-465f-ac1c-6ef78b42d4a2"}
+{"error":"no such column: \"priority\" - should this be a string literal in single-quotes?","level":"error","message":"Failed to fetch tasks","timestamp":"2025-09-19T19:18:05.533Z","userId":"65fbe574-c375-465f-ac1c-6ef78b42d4a2"}
+{"error":"no such column: \"priority\" - should this be a string literal in single-quotes?","level":"error","message":"Failed to fetch tasks","timestamp":"2025-09-19T19:31:31.814Z","userId":"65fbe574-c375-465f-ac1c-6ef78b42d4a2"}
+{"error":"no such column: \"priority\" - should this be a string literal in single-quotes?","level":"error","message":"Failed to fetch tasks","timestamp":"2025-09-19T19:31:31.814Z","userId":"65fbe574-c375-465f-ac1c-6ef78b42d4a2"}
+{"error":"no such column: \"priority\" - should this be a string literal in single-quotes?","level":"error","message":"Failed to fetch tasks","timestamp":"2025-09-19T19:31:32.822Z","userId":"65fbe574-c375-465f-ac1c-6ef78b42d4a2"}
+{"error":"no such column: \"priority\" - should this be a string literal in single-quotes?","level":"error","message":"Failed to fetch tasks","timestamp":"2025-09-19T19:31:32.822Z","userId":"65fbe574-c375-465f-ac1c-6ef78b42d4a2"}
+{"error":"no such column: \"priority\" - should this be a string literal in single-quotes?","level":"error","message":"Failed to fetch tasks","timestamp":"2025-09-19T19:31:34.829Z","userId":"65fbe574-c375-465f-ac1c-6ef78b42d4a2"}
+{"error":"no such column: \"priority\" - should this be a string literal in single-quotes?","level":"error","message":"Failed to fetch tasks","timestamp":"2025-09-19T19:31:34.829Z","userId":"65fbe574-c375-465f-ac1c-6ef78b42d4a2"}
+{"error":"no such column: \"priority\" - should this be a string literal in single-quotes?","level":"error","message":"Failed to fetch tasks","timestamp":"2025-09-19T19:31:38.836Z","userId":"65fbe574-c375-465f-ac1c-6ef78b42d4a2"}
+{"error":"no such column: \"priority\" - should this be a string literal in single-quotes?","level":"error","message":"Failed to fetch tasks","timestamp":"2025-09-19T19:31:38.836Z","userId":"65fbe574-c375-465f-ac1c-6ef78b42d4a2"}

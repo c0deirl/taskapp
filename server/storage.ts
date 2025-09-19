@@ -74,9 +74,9 @@ export class DbStorage implements IStorage {
   async getTasks(userId: string): Promise<Task[]> {
     try {
       logger.debug('Fetching tasks for user', { userId });
-      const tasks = await db.select().from(tasks).where(eq(tasks.userId, userId));
-      logger.debug('Tasks retrieved successfully', { userId, taskCount: tasks.length });
-      return tasks;
+      const result = await db.select().from(tasks).where(eq(tasks.userId, userId));
+      logger.debug('Tasks retrieved successfully', { userId, taskCount: result.length });
+      return result;
     } catch (error) {
       logger.error('Failed to fetch tasks', {
         userId,

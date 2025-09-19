@@ -26,9 +26,9 @@ app.use(session({
   resave: false,
   saveUninitialized: false,
   cookie: {
-    secure: process.env.NODE_ENV === 'production',
+    secure: false, // Allow non-HTTPS in development
     maxAge: 24 * 60 * 60 * 1000, // 24 hours
-    sameSite: 'none', // Allow cross-site cookie
+    sameSite: 'lax', // More permissive for development
     httpOnly: true, // Prevent XSS
     path: '/' // Allow access from any path
   }

@@ -2,3 +2,273 @@
 {"level":"info","message":"Database connection established successfully","timestamp":"2025-09-19T13:11:28.208Z"}
 {"level":"debug","message":"Configured WebSocket for development environment","timestamp":"2025-09-19T13:18:58.938Z"}
 {"level":"info","message":"Database connection established successfully","timestamp":"2025-09-19T13:18:58.940Z"}
+{"level":"debug","message":"Configured WebSocket for development environment","timestamp":"2025-09-19T13:35:06.622Z"}
+{"level":"info","message":"Database connection established successfully","timestamp":"2025-09-19T13:35:06.624Z"}
+{"level":"info","message":"User logged in successfully","sessionId":"jZfN3yCMzsYTHxfXNtsVJh6VbrVcDZ_v","timestamp":"2025-09-19T14:49:52.304Z","username":"admin"}
+{"ip":"::1","level":"warn","message":"Unauthorized access attempt","method":"GET","path":"/api/tasks","timestamp":"2025-09-19T14:49:52.327Z"}
+{"level":"info","message":"User logged out successfully","timestamp":"2025-09-19T14:49:52.346Z"}
+{"level":"info","message":"User logged in successfully","sessionId":"pn5cI5WVrbms5wadVnZNq1o2mE3CuwXG","timestamp":"2025-09-19T14:49:57.824Z","username":"admin"}
+{"ip":"::1","level":"warn","message":"Unauthorized access attempt","method":"GET","path":"/api/tasks","timestamp":"2025-09-19T14:49:57.836Z"}
+{"level":"info","message":"User logged out successfully","timestamp":"2025-09-19T14:49:57.845Z"}
+{"level":"info","message":"User logged in successfully","sessionId":"wI8yqS1tElrHVIG1MJtoz_dBa-8lQnw1","timestamp":"2025-09-19T14:50:08.099Z","username":"admin"}
+{"ip":"::1","level":"warn","message":"Unauthorized access attempt","method":"GET","path":"/api/tasks","timestamp":"2025-09-19T14:50:08.110Z"}
+{"level":"info","message":"User logged out successfully","timestamp":"2025-09-19T14:50:08.120Z"}
+{"level":"debug","message":"Configured WebSocket for development environment","timestamp":"2025-09-19T15:03:33.362Z"}
+{"level":"info","message":"Database connection established successfully","timestamp":"2025-09-19T15:03:33.364Z"}
+{"level":"info","message":"User logged in successfully","sessionId":"pv380j-PLeL7KtAT37bG37yiR-KZBeIg","timestamp":"2025-09-19T15:18:35.916Z","username":"admin"}
+{"level":"debug","message":"Authenticated request","method":"GET","path":"/api/tasks","timestamp":"2025-09-19T15:18:35.935Z","userId":"admin"}
+{"level":"debug","message":"Fetching tasks for user","timestamp":"2025-09-19T15:18:35.935Z","userId":"admin"}
+{"error":"Cannot access 'tasks2' before initialization","level":"error","message":"Failed to fetch tasks","timestamp":"2025-09-19T15:18:35.936Z","userId":"admin"}
+{"error":"Cannot access 'tasks2' before initialization","level":"error","message":"Failed to fetch tasks","timestamp":"2025-09-19T15:18:35.936Z","userId":"admin"}
+{"level":"debug","message":"Authenticated request","method":"GET","path":"/api/tasks","timestamp":"2025-09-19T15:18:36.947Z","userId":"admin"}
+{"level":"debug","message":"Fetching tasks for user","timestamp":"2025-09-19T15:18:36.947Z","userId":"admin"}
+{"error":"Cannot access 'tasks2' before initialization","level":"error","message":"Failed to fetch tasks","timestamp":"2025-09-19T15:18:36.948Z","userId":"admin"}
+{"error":"Cannot access 'tasks2' before initialization","level":"error","message":"Failed to fetch tasks","timestamp":"2025-09-19T15:18:36.948Z","userId":"admin"}
+{"level":"debug","message":"Authenticated request","method":"GET","path":"/api/tasks","timestamp":"2025-09-19T15:18:38.953Z","userId":"admin"}
+{"level":"debug","message":"Fetching tasks for user","timestamp":"2025-09-19T15:18:38.954Z","userId":"admin"}
+{"error":"Cannot access 'tasks2' before initialization","level":"error","message":"Failed to fetch tasks","timestamp":"2025-09-19T15:18:38.954Z","userId":"admin"}
+{"error":"Cannot access 'tasks2' before initialization","level":"error","message":"Failed to fetch tasks","timestamp":"2025-09-19T15:18:38.954Z","userId":"admin"}
+{"level":"debug","message":"Authenticated request","method":"GET","path":"/api/tasks","timestamp":"2025-09-19T15:18:42.960Z","userId":"admin"}
+{"level":"debug","message":"Fetching tasks for user","timestamp":"2025-09-19T15:18:42.960Z","userId":"admin"}
+{"error":"Cannot access 'tasks2' before initialization","level":"error","message":"Failed to fetch tasks","timestamp":"2025-09-19T15:18:42.961Z","userId":"admin"}
+{"error":"Cannot access 'tasks2' before initialization","level":"error","message":"Failed to fetch tasks","timestamp":"2025-09-19T15:18:42.961Z","userId":"admin"}
+{"level":"debug","message":"Authenticated request","method":"GET","path":"/api/tasks","timestamp":"2025-09-19T15:56:17.187Z","userId":"admin"}
+{"level":"debug","message":"Fetching tasks for user","timestamp":"2025-09-19T15:56:17.187Z","userId":"admin"}
+{"error":"Cannot access 'tasks2' before initialization","level":"error","message":"Failed to fetch tasks","timestamp":"2025-09-19T15:56:17.187Z","userId":"admin"}
+{"error":"Cannot access 'tasks2' before initialization","level":"error","message":"Failed to fetch tasks","timestamp":"2025-09-19T15:56:17.188Z","userId":"admin"}
+{"level":"debug","message":"Authenticated request","method":"GET","path":"/api/tasks","timestamp":"2025-09-19T15:56:18.194Z","userId":"admin"}
+{"level":"debug","message":"Fetching tasks for user","timestamp":"2025-09-19T15:56:18.195Z","userId":"admin"}
+{"error":"Cannot access 'tasks2' before initialization","level":"error","message":"Failed to fetch tasks","timestamp":"2025-09-19T15:56:18.195Z","userId":"admin"}
+{"error":"Cannot access 'tasks2' before initialization","level":"error","message":"Failed to fetch tasks","timestamp":"2025-09-19T15:56:18.195Z","userId":"admin"}
+{"level":"debug","message":"Authenticated request","method":"GET","path":"/api/tasks","timestamp":"2025-09-19T15:56:20.201Z","userId":"admin"}
+{"level":"debug","message":"Fetching tasks for user","timestamp":"2025-09-19T15:56:20.202Z","userId":"admin"}
+{"error":"Cannot access 'tasks2' before initialization","level":"error","message":"Failed to fetch tasks","timestamp":"2025-09-19T15:56:20.202Z","userId":"admin"}
+{"error":"Cannot access 'tasks2' before initialization","level":"error","message":"Failed to fetch tasks","timestamp":"2025-09-19T15:56:20.202Z","userId":"admin"}
+{"level":"debug","message":"Authenticated request","method":"GET","path":"/api/tasks","timestamp":"2025-09-19T15:56:24.209Z","userId":"admin"}
+{"level":"debug","message":"Fetching tasks for user","timestamp":"2025-09-19T15:56:24.209Z","userId":"admin"}
+{"error":"Cannot access 'tasks2' before initialization","level":"error","message":"Failed to fetch tasks","timestamp":"2025-09-19T15:56:24.209Z","userId":"admin"}
+{"error":"Cannot access 'tasks2' before initialization","level":"error","message":"Failed to fetch tasks","timestamp":"2025-09-19T15:56:24.209Z","userId":"admin"}
+{"level":"debug","message":"Configured WebSocket for development environment","timestamp":"2025-09-19T16:20:49.490Z"}
+{"level":"info","message":"Database connection established successfully","timestamp":"2025-09-19T16:20:49.492Z"}
+{"ip":"::1","level":"warn","message":"Unauthorized access attempt","method":"GET","path":"/api/tasks","timestamp":"2025-09-19T16:26:55.737Z"}
+{"level":"info","message":"User logged out successfully","timestamp":"2025-09-19T16:26:55.745Z"}
+{"level":"info","message":"User logged in successfully","sessionId":"BdN-Jk77vdK6wy6eoXuJZMIcz18DK-cO","timestamp":"2025-09-19T16:27:02.304Z","username":"admin"}
+{"level":"debug","message":"Authenticated request","method":"GET","path":"/api/tasks","timestamp":"2025-09-19T16:27:02.316Z","userId":"admin"}
+{"level":"debug","message":"Fetching tasks for user","timestamp":"2025-09-19T16:27:02.317Z","userId":"admin"}
+{"error":"client.query is not a function","level":"error","message":"Failed to fetch tasks","timestamp":"2025-09-19T16:27:02.320Z","userId":"admin"}
+{"error":"client.query is not a function","level":"error","message":"Failed to fetch tasks","timestamp":"2025-09-19T16:27:02.320Z","userId":"admin"}
+{"level":"debug","message":"Authenticated request","method":"GET","path":"/api/tasks","timestamp":"2025-09-19T16:27:03.330Z","userId":"admin"}
+{"level":"debug","message":"Fetching tasks for user","timestamp":"2025-09-19T16:27:03.330Z","userId":"admin"}
+{"error":"client.query is not a function","level":"error","message":"Failed to fetch tasks","timestamp":"2025-09-19T16:27:03.331Z","userId":"admin"}
+{"error":"client.query is not a function","level":"error","message":"Failed to fetch tasks","timestamp":"2025-09-19T16:27:03.331Z","userId":"admin"}
+{"level":"debug","message":"Authenticated request","method":"GET","path":"/api/tasks","timestamp":"2025-09-19T16:27:05.337Z","userId":"admin"}
+{"level":"debug","message":"Fetching tasks for user","timestamp":"2025-09-19T16:27:05.337Z","userId":"admin"}
+{"error":"client.query is not a function","level":"error","message":"Failed to fetch tasks","timestamp":"2025-09-19T16:27:05.338Z","userId":"admin"}
+{"error":"client.query is not a function","level":"error","message":"Failed to fetch tasks","timestamp":"2025-09-19T16:27:05.338Z","userId":"admin"}
+{"level":"debug","message":"Authenticated request","method":"GET","path":"/api/tasks","timestamp":"2025-09-19T16:27:09.344Z","userId":"admin"}
+{"level":"debug","message":"Fetching tasks for user","timestamp":"2025-09-19T16:27:09.345Z","userId":"admin"}
+{"error":"client.query is not a function","level":"error","message":"Failed to fetch tasks","timestamp":"2025-09-19T16:27:09.345Z","userId":"admin"}
+{"error":"client.query is not a function","level":"error","message":"Failed to fetch tasks","timestamp":"2025-09-19T16:27:09.345Z","userId":"admin"}
+{"error":{"code":"ECONNREFUSED"},"level":"error","message":"Failed to establish database connection:","timestamp":"2025-09-19T16:37:51.024Z"}
+{"level":"info","message":"Database connection established successfully","timestamp":"2025-09-19T17:16:26.667Z"}
+{"level":"info","message":"User logged in successfully","sessionId":"hF3slK-N2NWSz1VaIpSgiPe4VNBdHpg4","timestamp":"2025-09-19T17:33:22.716Z","username":"admin"}
+{"level":"debug","message":"Authenticated request","method":"GET","path":"/api/tasks","timestamp":"2025-09-19T17:33:22.730Z","userId":"admin"}
+{"level":"debug","message":"Fetching tasks for user","timestamp":"2025-09-19T17:33:22.730Z","userId":"admin"}
+{"level":"debug","message":"Tasks retrieved successfully","taskCount":0,"timestamp":"2025-09-19T17:33:22.732Z","userId":"admin"}
+{"level":"info","message":"Tasks retrieved successfully","taskCount":0,"timestamp":"2025-09-19T17:33:22.732Z","userId":"admin"}
+{"level":"debug","message":"Authenticated request","method":"POST","path":"/api/tasks","timestamp":"2025-09-19T17:33:26.536Z","userId":"admin"}
+{"level":"warn","message":"Invalid task data submitted","timestamp":"2025-09-19T17:33:26.538Z","userId":"admin","validationErrors":[{"code":"invalid_type","expected":"string","message":"Required","path":["userId"],"received":"undefined"}]}
+{"level":"debug","message":"Authenticated request","method":"POST","path":"/api/tasks","timestamp":"2025-09-19T17:33:27.544Z","userId":"admin"}
+{"level":"warn","message":"Invalid task data submitted","timestamp":"2025-09-19T17:33:27.545Z","userId":"admin","validationErrors":[{"code":"invalid_type","expected":"string","message":"Required","path":["userId"],"received":"undefined"}]}
+{"level":"debug","message":"Authenticated request","method":"POST","path":"/api/tasks","timestamp":"2025-09-19T17:33:31.113Z","userId":"admin"}
+{"level":"warn","message":"Invalid task data submitted","timestamp":"2025-09-19T17:33:31.114Z","userId":"admin","validationErrors":[{"code":"invalid_type","expected":"string","message":"Required","path":["userId"],"received":"undefined"}]}
+{"level":"debug","message":"Authenticated request","method":"POST","path":"/api/tasks","timestamp":"2025-09-19T17:33:32.121Z","userId":"admin"}
+{"level":"warn","message":"Invalid task data submitted","timestamp":"2025-09-19T17:33:32.121Z","userId":"admin","validationErrors":[{"code":"invalid_type","expected":"string","message":"Required","path":["userId"],"received":"undefined"}]}
+{"level":"info","message":"Database connection established successfully","timestamp":"2025-09-19T17:53:12.671Z"}
+{"level":"info","message":"User logged in successfully","sessionId":"ncSCIpFjJDLxNHy-KrKNiABvJz83-OF7","timestamp":"2025-09-19T17:54:45.326Z","username":"admin"}
+{"level":"debug","message":"Authenticated request","method":"GET","path":"/api/tasks","timestamp":"2025-09-19T17:54:45.341Z","userId":"admin"}
+{"level":"debug","message":"Fetching tasks for user","timestamp":"2025-09-19T17:54:45.342Z","userId":"admin"}
+{"level":"debug","message":"Tasks retrieved successfully","taskCount":0,"timestamp":"2025-09-19T17:54:45.343Z","userId":"admin"}
+{"level":"info","message":"Tasks retrieved successfully","taskCount":0,"timestamp":"2025-09-19T17:54:45.343Z","userId":"admin"}
+{"level":"debug","message":"Authenticated request","method":"POST","path":"/api/tasks","timestamp":"2025-09-19T17:54:48.666Z","userId":"admin"}
+{"level":"debug","message":"Creating new task","taskData":{"title":"test","userId":"admin"},"timestamp":"2025-09-19T17:54:48.667Z","userId":"admin"}
+{"level":"debug","message":"Creating new task","timestamp":"2025-09-19T17:54:48.668Z","userId":"admin"}
+{"error":"FOREIGN KEY constraint failed","level":"error","message":"Failed to create task","timestamp":"2025-09-19T17:54:48.671Z","userId":"admin"}
+{"error":"FOREIGN KEY constraint failed","level":"error","message":"Failed to create task","timestamp":"2025-09-19T17:54:48.671Z","userId":"admin"}
+{"level":"debug","message":"Authenticated request","method":"POST","path":"/api/tasks","timestamp":"2025-09-19T17:54:49.677Z","userId":"admin"}
+{"level":"debug","message":"Creating new task","taskData":{"title":"test","userId":"admin"},"timestamp":"2025-09-19T17:54:49.678Z","userId":"admin"}
+{"level":"debug","message":"Creating new task","timestamp":"2025-09-19T17:54:49.678Z","userId":"admin"}
+{"error":"FOREIGN KEY constraint failed","level":"error","message":"Failed to create task","timestamp":"2025-09-19T17:54:49.681Z","userId":"admin"}
+{"error":"FOREIGN KEY constraint failed","level":"error","message":"Failed to create task","timestamp":"2025-09-19T17:54:49.682Z","userId":"admin"}
+{"level":"debug","message":"Authenticated request","method":"POST","path":"/api/tasks","timestamp":"2025-09-19T17:54:53.465Z","userId":"admin"}
+{"level":"debug","message":"Creating new task","taskData":{"title":"test","userId":"admin"},"timestamp":"2025-09-19T17:54:53.465Z","userId":"admin"}
+{"level":"debug","message":"Creating new task","timestamp":"2025-09-19T17:54:53.465Z","userId":"admin"}
+{"error":"FOREIGN KEY constraint failed","level":"error","message":"Failed to create task","timestamp":"2025-09-19T17:54:53.469Z","userId":"admin"}
+{"error":"FOREIGN KEY constraint failed","level":"error","message":"Failed to create task","timestamp":"2025-09-19T17:54:53.469Z","userId":"admin"}
+{"level":"debug","message":"Authenticated request","method":"POST","path":"/api/tasks","timestamp":"2025-09-19T17:54:54.474Z","userId":"admin"}
+{"level":"debug","message":"Creating new task","taskData":{"title":"test","userId":"admin"},"timestamp":"2025-09-19T17:54:54.475Z","userId":"admin"}
+{"level":"debug","message":"Creating new task","timestamp":"2025-09-19T17:54:54.475Z","userId":"admin"}
+{"error":"FOREIGN KEY constraint failed","level":"error","message":"Failed to create task","timestamp":"2025-09-19T17:54:54.478Z","userId":"admin"}
+{"error":"FOREIGN KEY constraint failed","level":"error","message":"Failed to create task","timestamp":"2025-09-19T17:54:54.478Z","userId":"admin"}
+{"level":"info","message":"Database connection established successfully","timestamp":"2025-09-19T18:25:44.682Z"}
+{"level":"debug","message":"Fetching user by username","timestamp":"2025-09-19T18:40:49.117Z","username":"admin"}
+{"level":"debug","message":"User not found","timestamp":"2025-09-19T18:40:49.118Z","username":"admin"}
+{"level":"debug","message":"Creating new user","timestamp":"2025-09-19T18:40:49.119Z","username":"admin"}
+{"level":"info","message":"User created successfully","timestamp":"2025-09-19T18:40:49.126Z","userId":"65fbe574-c375-465f-ac1c-6ef78b42d4a2"}
+{"level":"info","message":"Created new user","timestamp":"2025-09-19T18:40:49.126Z","userId":"65fbe574-c375-465f-ac1c-6ef78b42d4a2","username":"admin"}
+{"level":"info","message":"User logged in successfully","sessionId":"bN1e96oj5lSKpW6sJyPrA8UbHF8nfw5J","timestamp":"2025-09-19T18:40:49.127Z","userId":"65fbe574-c375-465f-ac1c-6ef78b42d4a2","username":"admin"}
+{"level":"debug","message":"Authenticated request","method":"GET","path":"/api/tasks","timestamp":"2025-09-19T18:40:49.140Z","userId":"65fbe574-c375-465f-ac1c-6ef78b42d4a2"}
+{"level":"debug","message":"Fetching tasks for user","timestamp":"2025-09-19T18:40:49.140Z","userId":"65fbe574-c375-465f-ac1c-6ef78b42d4a2"}
+{"level":"debug","message":"Tasks retrieved successfully","taskCount":0,"timestamp":"2025-09-19T18:40:49.141Z","userId":"65fbe574-c375-465f-ac1c-6ef78b42d4a2"}
+{"level":"info","message":"Tasks retrieved successfully","taskCount":0,"timestamp":"2025-09-19T18:40:49.141Z","userId":"65fbe574-c375-465f-ac1c-6ef78b42d4a2"}
+{"level":"debug","message":"Authenticated request","method":"POST","path":"/api/tasks","timestamp":"2025-09-19T18:40:51.662Z","userId":"65fbe574-c375-465f-ac1c-6ef78b42d4a2"}
+{"level":"debug","message":"Creating new task","taskData":{"title":"test","userId":"65fbe574-c375-465f-ac1c-6ef78b42d4a2"},"timestamp":"2025-09-19T18:40:51.663Z","userId":"65fbe574-c375-465f-ac1c-6ef78b42d4a2"}
+{"level":"debug","message":"Creating new task","timestamp":"2025-09-19T18:40:51.664Z","userId":"65fbe574-c375-465f-ac1c-6ef78b42d4a2"}
+{"level":"info","message":"Task created successfully","taskId":"23ff3917-2c44-41fb-9c1f-47c1abb0cca3","timestamp":"2025-09-19T18:40:51.671Z","userId":"65fbe574-c375-465f-ac1c-6ef78b42d4a2"}
+{"level":"info","message":"Task created successfully","taskId":"23ff3917-2c44-41fb-9c1f-47c1abb0cca3","timestamp":"2025-09-19T18:40:51.672Z","userId":"65fbe574-c375-465f-ac1c-6ef78b42d4a2"}
+{"level":"debug","message":"Authenticated request","method":"GET","path":"/api/tasks","timestamp":"2025-09-19T18:40:51.676Z","userId":"65fbe574-c375-465f-ac1c-6ef78b42d4a2"}
+{"level":"debug","message":"Fetching tasks for user","timestamp":"2025-09-19T18:40:51.677Z","userId":"65fbe574-c375-465f-ac1c-6ef78b42d4a2"}
+{"level":"debug","message":"Tasks retrieved successfully","taskCount":1,"timestamp":"2025-09-19T18:40:51.677Z","userId":"65fbe574-c375-465f-ac1c-6ef78b42d4a2"}
+{"level":"info","message":"Tasks retrieved successfully","taskCount":1,"timestamp":"2025-09-19T18:40:51.677Z","userId":"65fbe574-c375-465f-ac1c-6ef78b42d4a2"}
+{"level":"debug","message":"User session retrieved","timestamp":"2025-09-19T18:48:09.242Z","userId":"65fbe574-c375-465f-ac1c-6ef78b42d4a2"}
+{"level":"debug","message":"Authenticated request","method":"GET","path":"/api/tasks","timestamp":"2025-09-19T18:48:09.358Z","userId":"65fbe574-c375-465f-ac1c-6ef78b42d4a2"}
+{"level":"debug","message":"Fetching tasks for user","timestamp":"2025-09-19T18:48:09.358Z","userId":"65fbe574-c375-465f-ac1c-6ef78b42d4a2"}
+{"level":"debug","message":"Tasks retrieved successfully","taskCount":1,"timestamp":"2025-09-19T18:48:09.359Z","userId":"65fbe574-c375-465f-ac1c-6ef78b42d4a2"}
+{"level":"info","message":"Tasks retrieved successfully","taskCount":1,"timestamp":"2025-09-19T18:48:09.359Z","userId":"65fbe574-c375-465f-ac1c-6ef78b42d4a2"}
+{"level":"debug","message":"User session retrieved","timestamp":"2025-09-19T18:48:14.529Z","userId":"65fbe574-c375-465f-ac1c-6ef78b42d4a2"}
+{"level":"debug","message":"Authenticated request","method":"GET","path":"/api/tasks","timestamp":"2025-09-19T18:48:14.548Z","userId":"65fbe574-c375-465f-ac1c-6ef78b42d4a2"}
+{"level":"debug","message":"Fetching tasks for user","timestamp":"2025-09-19T18:48:14.548Z","userId":"65fbe574-c375-465f-ac1c-6ef78b42d4a2"}
+{"level":"debug","message":"Tasks retrieved successfully","taskCount":1,"timestamp":"2025-09-19T18:48:14.549Z","userId":"65fbe574-c375-465f-ac1c-6ef78b42d4a2"}
+{"level":"info","message":"Tasks retrieved successfully","taskCount":1,"timestamp":"2025-09-19T18:48:14.549Z","userId":"65fbe574-c375-465f-ac1c-6ef78b42d4a2"}
+{"level":"debug","message":"User session retrieved","timestamp":"2025-09-19T18:55:37.453Z","userId":"65fbe574-c375-465f-ac1c-6ef78b42d4a2"}
+{"level":"debug","message":"Authenticated request","method":"GET","path":"/api/tasks","timestamp":"2025-09-19T18:55:37.559Z","userId":"65fbe574-c375-465f-ac1c-6ef78b42d4a2"}
+{"level":"debug","message":"Fetching tasks for user","timestamp":"2025-09-19T18:55:37.559Z","userId":"65fbe574-c375-465f-ac1c-6ef78b42d4a2"}
+{"level":"debug","message":"Tasks retrieved successfully","taskCount":1,"timestamp":"2025-09-19T18:55:37.560Z","userId":"65fbe574-c375-465f-ac1c-6ef78b42d4a2"}
+{"level":"info","message":"Tasks retrieved successfully","taskCount":1,"timestamp":"2025-09-19T18:55:37.560Z","userId":"65fbe574-c375-465f-ac1c-6ef78b42d4a2"}
+{"level":"info","message":"Database connection established successfully","timestamp":"2025-09-19T19:17:18.152Z"}
+{"level":"debug","message":"Fetching user by username","timestamp":"2025-09-19T19:17:27.277Z","username":"admin"}
+{"level":"info","message":"User logged in successfully","sessionId":"0ac9s2DCZrWNxZcexsfxoN64uuJ0AHmh","timestamp":"2025-09-19T19:17:27.279Z","userId":"65fbe574-c375-465f-ac1c-6ef78b42d4a2","username":"admin"}
+{"level":"debug","message":"Authenticated request","method":"GET","path":"/api/tasks","timestamp":"2025-09-19T19:17:27.293Z","userId":"65fbe574-c375-465f-ac1c-6ef78b42d4a2"}
+{"level":"debug","message":"Fetching tasks for user","timestamp":"2025-09-19T19:17:27.293Z","userId":"65fbe574-c375-465f-ac1c-6ef78b42d4a2"}
+{"error":"no such column: \"priority\" - should this be a string literal in single-quotes?","level":"error","message":"Failed to fetch tasks","timestamp":"2025-09-19T19:17:27.294Z","userId":"65fbe574-c375-465f-ac1c-6ef78b42d4a2"}
+{"error":"no such column: \"priority\" - should this be a string literal in single-quotes?","level":"error","message":"Failed to fetch tasks","timestamp":"2025-09-19T19:17:27.295Z","userId":"65fbe574-c375-465f-ac1c-6ef78b42d4a2"}
+{"level":"debug","message":"Authenticated request","method":"GET","path":"/api/tasks","timestamp":"2025-09-19T19:17:28.310Z","userId":"65fbe574-c375-465f-ac1c-6ef78b42d4a2"}
+{"level":"debug","message":"Fetching tasks for user","timestamp":"2025-09-19T19:17:28.310Z","userId":"65fbe574-c375-465f-ac1c-6ef78b42d4a2"}
+{"error":"no such column: \"priority\" - should this be a string literal in single-quotes?","level":"error","message":"Failed to fetch tasks","timestamp":"2025-09-19T19:17:28.311Z","userId":"65fbe574-c375-465f-ac1c-6ef78b42d4a2"}
+{"error":"no such column: \"priority\" - should this be a string literal in single-quotes?","level":"error","message":"Failed to fetch tasks","timestamp":"2025-09-19T19:17:28.312Z","userId":"65fbe574-c375-465f-ac1c-6ef78b42d4a2"}
+{"level":"debug","message":"Authenticated request","method":"GET","path":"/api/tasks","timestamp":"2025-09-19T19:17:30.318Z","userId":"65fbe574-c375-465f-ac1c-6ef78b42d4a2"}
+{"level":"debug","message":"Fetching tasks for user","timestamp":"2025-09-19T19:17:30.318Z","userId":"65fbe574-c375-465f-ac1c-6ef78b42d4a2"}
+{"error":"no such column: \"priority\" - should this be a string literal in single-quotes?","level":"error","message":"Failed to fetch tasks","timestamp":"2025-09-19T19:17:30.319Z","userId":"65fbe574-c375-465f-ac1c-6ef78b42d4a2"}
+{"error":"no such column: \"priority\" - should this be a string literal in single-quotes?","level":"error","message":"Failed to fetch tasks","timestamp":"2025-09-19T19:17:30.319Z","userId":"65fbe574-c375-465f-ac1c-6ef78b42d4a2"}
+{"level":"debug","message":"Authenticated request","method":"GET","path":"/api/tasks","timestamp":"2025-09-19T19:17:34.325Z","userId":"65fbe574-c375-465f-ac1c-6ef78b42d4a2"}
+{"level":"debug","message":"Fetching tasks for user","timestamp":"2025-09-19T19:17:34.325Z","userId":"65fbe574-c375-465f-ac1c-6ef78b42d4a2"}
+{"error":"no such column: \"priority\" - should this be a string literal in single-quotes?","level":"error","message":"Failed to fetch tasks","timestamp":"2025-09-19T19:17:34.326Z","userId":"65fbe574-c375-465f-ac1c-6ef78b42d4a2"}
+{"error":"no such column: \"priority\" - should this be a string literal in single-quotes?","level":"error","message":"Failed to fetch tasks","timestamp":"2025-09-19T19:17:34.326Z","userId":"65fbe574-c375-465f-ac1c-6ef78b42d4a2"}
+{"level":"debug","message":"Authenticated request","method":"GET","path":"/api/tasks","timestamp":"2025-09-19T19:17:58.510Z","userId":"65fbe574-c375-465f-ac1c-6ef78b42d4a2"}
+{"level":"debug","message":"Fetching tasks for user","timestamp":"2025-09-19T19:17:58.510Z","userId":"65fbe574-c375-465f-ac1c-6ef78b42d4a2"}
+{"error":"no such column: \"priority\" - should this be a string literal in single-quotes?","level":"error","message":"Failed to fetch tasks","timestamp":"2025-09-19T19:17:58.511Z","userId":"65fbe574-c375-465f-ac1c-6ef78b42d4a2"}
+{"error":"no such column: \"priority\" - should this be a string literal in single-quotes?","level":"error","message":"Failed to fetch tasks","timestamp":"2025-09-19T19:17:58.511Z","userId":"65fbe574-c375-465f-ac1c-6ef78b42d4a2"}
+{"level":"debug","message":"Authenticated request","method":"GET","path":"/api/tasks","timestamp":"2025-09-19T19:17:59.517Z","userId":"65fbe574-c375-465f-ac1c-6ef78b42d4a2"}
+{"level":"debug","message":"Fetching tasks for user","timestamp":"2025-09-19T19:17:59.517Z","userId":"65fbe574-c375-465f-ac1c-6ef78b42d4a2"}
+{"error":"no such column: \"priority\" - should this be a string literal in single-quotes?","level":"error","message":"Failed to fetch tasks","timestamp":"2025-09-19T19:17:59.518Z","userId":"65fbe574-c375-465f-ac1c-6ef78b42d4a2"}
+{"error":"no such column: \"priority\" - should this be a string literal in single-quotes?","level":"error","message":"Failed to fetch tasks","timestamp":"2025-09-19T19:17:59.518Z","userId":"65fbe574-c375-465f-ac1c-6ef78b42d4a2"}
+{"level":"debug","message":"Authenticated request","method":"GET","path":"/api/tasks","timestamp":"2025-09-19T19:18:01.525Z","userId":"65fbe574-c375-465f-ac1c-6ef78b42d4a2"}
+{"level":"debug","message":"Fetching tasks for user","timestamp":"2025-09-19T19:18:01.525Z","userId":"65fbe574-c375-465f-ac1c-6ef78b42d4a2"}
+{"error":"no such column: \"priority\" - should this be a string literal in single-quotes?","level":"error","message":"Failed to fetch tasks","timestamp":"2025-09-19T19:18:01.525Z","userId":"65fbe574-c375-465f-ac1c-6ef78b42d4a2"}
+{"error":"no such column: \"priority\" - should this be a string literal in single-quotes?","level":"error","message":"Failed to fetch tasks","timestamp":"2025-09-19T19:18:01.526Z","userId":"65fbe574-c375-465f-ac1c-6ef78b42d4a2"}
+{"level":"debug","message":"Authenticated request","method":"GET","path":"/api/tasks","timestamp":"2025-09-19T19:18:05.532Z","userId":"65fbe574-c375-465f-ac1c-6ef78b42d4a2"}
+{"level":"debug","message":"Fetching tasks for user","timestamp":"2025-09-19T19:18:05.532Z","userId":"65fbe574-c375-465f-ac1c-6ef78b42d4a2"}
+{"error":"no such column: \"priority\" - should this be a string literal in single-quotes?","level":"error","message":"Failed to fetch tasks","timestamp":"2025-09-19T19:18:05.533Z","userId":"65fbe574-c375-465f-ac1c-6ef78b42d4a2"}
+{"error":"no such column: \"priority\" - should this be a string literal in single-quotes?","level":"error","message":"Failed to fetch tasks","timestamp":"2025-09-19T19:18:05.533Z","userId":"65fbe574-c375-465f-ac1c-6ef78b42d4a2"}
+{"level":"debug","message":"Authenticated request","method":"GET","path":"/api/tasks","timestamp":"2025-09-19T19:31:31.813Z","userId":"65fbe574-c375-465f-ac1c-6ef78b42d4a2"}
+{"level":"debug","message":"Fetching tasks for user","timestamp":"2025-09-19T19:31:31.814Z","userId":"65fbe574-c375-465f-ac1c-6ef78b42d4a2"}
+{"error":"no such column: \"priority\" - should this be a string literal in single-quotes?","level":"error","message":"Failed to fetch tasks","timestamp":"2025-09-19T19:31:31.814Z","userId":"65fbe574-c375-465f-ac1c-6ef78b42d4a2"}
+{"error":"no such column: \"priority\" - should this be a string literal in single-quotes?","level":"error","message":"Failed to fetch tasks","timestamp":"2025-09-19T19:31:31.814Z","userId":"65fbe574-c375-465f-ac1c-6ef78b42d4a2"}
+{"level":"debug","message":"Authenticated request","method":"GET","path":"/api/tasks","timestamp":"2025-09-19T19:31:32.821Z","userId":"65fbe574-c375-465f-ac1c-6ef78b42d4a2"}
+{"level":"debug","message":"Fetching tasks for user","timestamp":"2025-09-19T19:31:32.822Z","userId":"65fbe574-c375-465f-ac1c-6ef78b42d4a2"}
+{"error":"no such column: \"priority\" - should this be a string literal in single-quotes?","level":"error","message":"Failed to fetch tasks","timestamp":"2025-09-19T19:31:32.822Z","userId":"65fbe574-c375-465f-ac1c-6ef78b42d4a2"}
+{"error":"no such column: \"priority\" - should this be a string literal in single-quotes?","level":"error","message":"Failed to fetch tasks","timestamp":"2025-09-19T19:31:32.822Z","userId":"65fbe574-c375-465f-ac1c-6ef78b42d4a2"}
+{"level":"debug","message":"Authenticated request","method":"GET","path":"/api/tasks","timestamp":"2025-09-19T19:31:34.828Z","userId":"65fbe574-c375-465f-ac1c-6ef78b42d4a2"}
+{"level":"debug","message":"Fetching tasks for user","timestamp":"2025-09-19T19:31:34.828Z","userId":"65fbe574-c375-465f-ac1c-6ef78b42d4a2"}
+{"error":"no such column: \"priority\" - should this be a string literal in single-quotes?","level":"error","message":"Failed to fetch tasks","timestamp":"2025-09-19T19:31:34.829Z","userId":"65fbe574-c375-465f-ac1c-6ef78b42d4a2"}
+{"error":"no such column: \"priority\" - should this be a string literal in single-quotes?","level":"error","message":"Failed to fetch tasks","timestamp":"2025-09-19T19:31:34.829Z","userId":"65fbe574-c375-465f-ac1c-6ef78b42d4a2"}
+{"level":"debug","message":"Authenticated request","method":"GET","path":"/api/tasks","timestamp":"2025-09-19T19:31:38.835Z","userId":"65fbe574-c375-465f-ac1c-6ef78b42d4a2"}
+{"level":"debug","message":"Fetching tasks for user","timestamp":"2025-09-19T19:31:38.835Z","userId":"65fbe574-c375-465f-ac1c-6ef78b42d4a2"}
+{"error":"no such column: \"priority\" - should this be a string literal in single-quotes?","level":"error","message":"Failed to fetch tasks","timestamp":"2025-09-19T19:31:38.836Z","userId":"65fbe574-c375-465f-ac1c-6ef78b42d4a2"}
+{"error":"no such column: \"priority\" - should this be a string literal in single-quotes?","level":"error","message":"Failed to fetch tasks","timestamp":"2025-09-19T19:31:38.836Z","userId":"65fbe574-c375-465f-ac1c-6ef78b42d4a2"}
+{"level":"info","message":"Database connection established successfully","timestamp":"2025-09-19T19:47:39.213Z"}
+{"level":"debug","message":"Fetching user by username","timestamp":"2025-09-19T19:47:50.395Z","username":"admin"}
+{"level":"info","message":"User logged in successfully","sessionId":"IWe_guQAqUIyOToZw3rHcWObokley8xf","timestamp":"2025-09-19T19:47:50.396Z","userId":"65fbe574-c375-465f-ac1c-6ef78b42d4a2","username":"admin"}
+{"level":"debug","message":"Authenticated request","method":"GET","path":"/api/tasks","timestamp":"2025-09-19T19:47:50.409Z","userId":"65fbe574-c375-465f-ac1c-6ef78b42d4a2"}
+{"level":"debug","message":"Fetching tasks for user","timestamp":"2025-09-19T19:47:50.409Z","userId":"65fbe574-c375-465f-ac1c-6ef78b42d4a2"}
+{"level":"debug","message":"Tasks retrieved successfully","taskCount":1,"timestamp":"2025-09-19T19:47:50.411Z","userId":"65fbe574-c375-465f-ac1c-6ef78b42d4a2"}
+{"level":"info","message":"Tasks retrieved successfully","taskCount":1,"timestamp":"2025-09-19T19:47:50.411Z","userId":"65fbe574-c375-465f-ac1c-6ef78b42d4a2"}
+{"level":"debug","message":"Authenticated request","method":"POST","path":"/api/tasks","timestamp":"2025-09-19T19:47:54.755Z","userId":"65fbe574-c375-465f-ac1c-6ef78b42d4a2"}
+{"level":"debug","message":"Creating new task","taskData":{"priority":"medium","title":"test2","userId":"65fbe574-c375-465f-ac1c-6ef78b42d4a2"},"timestamp":"2025-09-19T19:47:54.756Z","userId":"65fbe574-c375-465f-ac1c-6ef78b42d4a2"}
+{"level":"debug","message":"Creating new task","timestamp":"2025-09-19T19:47:54.757Z","userId":"65fbe574-c375-465f-ac1c-6ef78b42d4a2"}
+{"level":"info","message":"Task created successfully","taskId":"b3b9e006-bb34-4536-8cac-26b893b55f9d","timestamp":"2025-09-19T19:47:54.764Z","userId":"65fbe574-c375-465f-ac1c-6ef78b42d4a2"}
+{"level":"info","message":"Task created successfully","taskId":"b3b9e006-bb34-4536-8cac-26b893b55f9d","timestamp":"2025-09-19T19:47:54.764Z","userId":"65fbe574-c375-465f-ac1c-6ef78b42d4a2"}
+{"level":"debug","message":"Authenticated request","method":"GET","path":"/api/tasks","timestamp":"2025-09-19T19:47:54.768Z","userId":"65fbe574-c375-465f-ac1c-6ef78b42d4a2"}
+{"level":"debug","message":"Fetching tasks for user","timestamp":"2025-09-19T19:47:54.769Z","userId":"65fbe574-c375-465f-ac1c-6ef78b42d4a2"}
+{"level":"debug","message":"Tasks retrieved successfully","taskCount":2,"timestamp":"2025-09-19T19:47:54.769Z","userId":"65fbe574-c375-465f-ac1c-6ef78b42d4a2"}
+{"level":"info","message":"Tasks retrieved successfully","taskCount":2,"timestamp":"2025-09-19T19:47:54.770Z","userId":"65fbe574-c375-465f-ac1c-6ef78b42d4a2"}
+{"level":"debug","message":"User session retrieved","timestamp":"2025-09-19T20:01:16.340Z","userId":"65fbe574-c375-465f-ac1c-6ef78b42d4a2"}
+{"level":"debug","message":"Authenticated request","method":"GET","path":"/api/tasks","timestamp":"2025-09-19T20:01:16.369Z","userId":"65fbe574-c375-465f-ac1c-6ef78b42d4a2"}
+{"level":"debug","message":"Fetching tasks for user","timestamp":"2025-09-19T20:01:16.369Z","userId":"65fbe574-c375-465f-ac1c-6ef78b42d4a2"}
+{"level":"debug","message":"Tasks retrieved successfully","taskCount":2,"timestamp":"2025-09-19T20:01:16.370Z","userId":"65fbe574-c375-465f-ac1c-6ef78b42d4a2"}
+{"level":"info","message":"Tasks retrieved successfully","taskCount":2,"timestamp":"2025-09-19T20:01:16.370Z","userId":"65fbe574-c375-465f-ac1c-6ef78b42d4a2"}
+{"level":"debug","message":"Authenticated request","method":"PATCH","path":"/api/tasks/b3b9e006-bb34-4536-8cac-26b893b55f9d","timestamp":"2025-09-19T20:04:11.128Z","userId":"65fbe574-c375-465f-ac1c-6ef78b42d4a2"}
+{"level":"debug","message":"Updating task","taskId":"b3b9e006-bb34-4536-8cac-26b893b55f9d","timestamp":"2025-09-19T20:04:11.129Z","updateData":{"completed":true},"userId":"65fbe574-c375-465f-ac1c-6ef78b42d4a2"}
+{"level":"debug","message":"Updating task","taskId":"b3b9e006-bb34-4536-8cac-26b893b55f9d","timestamp":"2025-09-19T20:04:11.129Z","updateData":{"completed":true}}
+{"level":"info","message":"Task updated successfully","taskId":"b3b9e006-bb34-4536-8cac-26b893b55f9d","timestamp":"2025-09-19T20:04:11.138Z"}
+{"level":"info","message":"Task updated successfully","taskId":"b3b9e006-bb34-4536-8cac-26b893b55f9d","timestamp":"2025-09-19T20:04:11.138Z","userId":"65fbe574-c375-465f-ac1c-6ef78b42d4a2"}
+{"level":"debug","message":"Authenticated request","method":"GET","path":"/api/tasks","timestamp":"2025-09-19T20:04:11.145Z","userId":"65fbe574-c375-465f-ac1c-6ef78b42d4a2"}
+{"level":"debug","message":"Fetching tasks for user","timestamp":"2025-09-19T20:04:11.145Z","userId":"65fbe574-c375-465f-ac1c-6ef78b42d4a2"}
+{"level":"debug","message":"Tasks retrieved successfully","taskCount":2,"timestamp":"2025-09-19T20:04:11.146Z","userId":"65fbe574-c375-465f-ac1c-6ef78b42d4a2"}
+{"level":"info","message":"Tasks retrieved successfully","taskCount":2,"timestamp":"2025-09-19T20:04:11.146Z","userId":"65fbe574-c375-465f-ac1c-6ef78b42d4a2"}
+{"level":"debug","message":"Authenticated request","method":"PATCH","path":"/api/tasks/b3b9e006-bb34-4536-8cac-26b893b55f9d","timestamp":"2025-09-19T20:04:12.697Z","userId":"65fbe574-c375-465f-ac1c-6ef78b42d4a2"}
+{"level":"debug","message":"Updating task","taskId":"b3b9e006-bb34-4536-8cac-26b893b55f9d","timestamp":"2025-09-19T20:04:12.697Z","updateData":{"completed":false},"userId":"65fbe574-c375-465f-ac1c-6ef78b42d4a2"}
+{"level":"debug","message":"Updating task","taskId":"b3b9e006-bb34-4536-8cac-26b893b55f9d","timestamp":"2025-09-19T20:04:12.697Z","updateData":{"completed":false}}
+{"level":"info","message":"Task updated successfully","taskId":"b3b9e006-bb34-4536-8cac-26b893b55f9d","timestamp":"2025-09-19T20:04:12.705Z"}
+{"level":"info","message":"Task updated successfully","taskId":"b3b9e006-bb34-4536-8cac-26b893b55f9d","timestamp":"2025-09-19T20:04:12.705Z","userId":"65fbe574-c375-465f-ac1c-6ef78b42d4a2"}
+{"level":"debug","message":"Authenticated request","method":"GET","path":"/api/tasks","timestamp":"2025-09-19T20:04:12.710Z","userId":"65fbe574-c375-465f-ac1c-6ef78b42d4a2"}
+{"level":"debug","message":"Fetching tasks for user","timestamp":"2025-09-19T20:04:12.710Z","userId":"65fbe574-c375-465f-ac1c-6ef78b42d4a2"}
+{"level":"debug","message":"Tasks retrieved successfully","taskCount":2,"timestamp":"2025-09-19T20:04:12.711Z","userId":"65fbe574-c375-465f-ac1c-6ef78b42d4a2"}
+{"level":"info","message":"Tasks retrieved successfully","taskCount":2,"timestamp":"2025-09-19T20:04:12.711Z","userId":"65fbe574-c375-465f-ac1c-6ef78b42d4a2"}
+{"level":"debug","message":"Authenticated request","method":"POST","path":"/api/tasks","timestamp":"2025-09-19T20:04:16.436Z","userId":"65fbe574-c375-465f-ac1c-6ef78b42d4a2"}
+{"level":"debug","message":"Creating new task","taskData":{"priority":"medium","title":"test3","userId":"65fbe574-c375-465f-ac1c-6ef78b42d4a2"},"timestamp":"2025-09-19T20:04:16.436Z","userId":"65fbe574-c375-465f-ac1c-6ef78b42d4a2"}
+{"level":"debug","message":"Creating new task","timestamp":"2025-09-19T20:04:16.436Z","userId":"65fbe574-c375-465f-ac1c-6ef78b42d4a2"}
+{"level":"info","message":"Task created successfully","taskId":"7edb0843-c199-4576-b334-ddbf599d7d5d","timestamp":"2025-09-19T20:04:16.445Z","userId":"65fbe574-c375-465f-ac1c-6ef78b42d4a2"}
+{"level":"info","message":"Task created successfully","taskId":"7edb0843-c199-4576-b334-ddbf599d7d5d","timestamp":"2025-09-19T20:04:16.445Z","userId":"65fbe574-c375-465f-ac1c-6ef78b42d4a2"}
+{"level":"debug","message":"Authenticated request","method":"GET","path":"/api/tasks","timestamp":"2025-09-19T20:04:16.451Z","userId":"65fbe574-c375-465f-ac1c-6ef78b42d4a2"}
+{"level":"debug","message":"Fetching tasks for user","timestamp":"2025-09-19T20:04:16.451Z","userId":"65fbe574-c375-465f-ac1c-6ef78b42d4a2"}
+{"level":"debug","message":"Tasks retrieved successfully","taskCount":3,"timestamp":"2025-09-19T20:04:16.452Z","userId":"65fbe574-c375-465f-ac1c-6ef78b42d4a2"}
+{"level":"info","message":"Tasks retrieved successfully","taskCount":3,"timestamp":"2025-09-19T20:04:16.452Z","userId":"65fbe574-c375-465f-ac1c-6ef78b42d4a2"}
+{"level":"debug","message":"Authenticated request","method":"PATCH","path":"/api/tasks/23ff3917-2c44-41fb-9c1f-47c1abb0cca3","timestamp":"2025-09-19T20:04:37.213Z","userId":"65fbe574-c375-465f-ac1c-6ef78b42d4a2"}
+{"level":"debug","message":"Updating task","taskId":"23ff3917-2c44-41fb-9c1f-47c1abb0cca3","timestamp":"2025-09-19T20:04:37.214Z","updateData":{"priority":"medium","title":"test"},"userId":"65fbe574-c375-465f-ac1c-6ef78b42d4a2"}
+{"level":"debug","message":"Updating task","taskId":"23ff3917-2c44-41fb-9c1f-47c1abb0cca3","timestamp":"2025-09-19T20:04:37.214Z","updateData":{"priority":"medium","title":"test"}}
+{"level":"info","message":"Task updated successfully","taskId":"23ff3917-2c44-41fb-9c1f-47c1abb0cca3","timestamp":"2025-09-19T20:04:37.221Z"}
+{"level":"info","message":"Task updated successfully","taskId":"23ff3917-2c44-41fb-9c1f-47c1abb0cca3","timestamp":"2025-09-19T20:04:37.222Z","userId":"65fbe574-c375-465f-ac1c-6ef78b42d4a2"}
+{"level":"debug","message":"Authenticated request","method":"GET","path":"/api/tasks","timestamp":"2025-09-19T20:04:37.226Z","userId":"65fbe574-c375-465f-ac1c-6ef78b42d4a2"}
+{"level":"debug","message":"Fetching tasks for user","timestamp":"2025-09-19T20:04:37.226Z","userId":"65fbe574-c375-465f-ac1c-6ef78b42d4a2"}
+{"level":"debug","message":"Tasks retrieved successfully","taskCount":3,"timestamp":"2025-09-19T20:04:37.227Z","userId":"65fbe574-c375-465f-ac1c-6ef78b42d4a2"}
+{"level":"info","message":"Tasks retrieved successfully","taskCount":3,"timestamp":"2025-09-19T20:04:37.227Z","userId":"65fbe574-c375-465f-ac1c-6ef78b42d4a2"}
+{"level":"debug","message":"Authenticated request","method":"PATCH","path":"/api/tasks/23ff3917-2c44-41fb-9c1f-47c1abb0cca3","timestamp":"2025-09-19T20:04:44.673Z","userId":"65fbe574-c375-465f-ac1c-6ef78b42d4a2"}
+{"level":"debug","message":"Updating task","taskId":"23ff3917-2c44-41fb-9c1f-47c1abb0cca3","timestamp":"2025-09-19T20:04:44.673Z","updateData":{"description":"Descriptiuo","priority":"medium","title":"test"},"userId":"65fbe574-c375-465f-ac1c-6ef78b42d4a2"}
+{"level":"debug","message":"Updating task","taskId":"23ff3917-2c44-41fb-9c1f-47c1abb0cca3","timestamp":"2025-09-19T20:04:44.674Z","updateData":{"description":"Descriptiuo","priority":"medium","title":"test"}}
+{"level":"info","message":"Task updated successfully","taskId":"23ff3917-2c44-41fb-9c1f-47c1abb0cca3","timestamp":"2025-09-19T20:04:44.680Z"}
+{"level":"info","message":"Task updated successfully","taskId":"23ff3917-2c44-41fb-9c1f-47c1abb0cca3","timestamp":"2025-09-19T20:04:44.680Z","userId":"65fbe574-c375-465f-ac1c-6ef78b42d4a2"}
+{"level":"debug","message":"Authenticated request","method":"GET","path":"/api/tasks","timestamp":"2025-09-19T20:04:44.684Z","userId":"65fbe574-c375-465f-ac1c-6ef78b42d4a2"}
+{"level":"debug","message":"Fetching tasks for user","timestamp":"2025-09-19T20:04:44.685Z","userId":"65fbe574-c375-465f-ac1c-6ef78b42d4a2"}
+{"level":"debug","message":"Tasks retrieved successfully","taskCount":3,"timestamp":"2025-09-19T20:04:44.685Z","userId":"65fbe574-c375-465f-ac1c-6ef78b42d4a2"}
+{"level":"info","message":"Tasks retrieved successfully","taskCount":3,"timestamp":"2025-09-19T20:04:44.685Z","userId":"65fbe574-c375-465f-ac1c-6ef78b42d4a2"}
+{"level":"debug","message":"User session retrieved","timestamp":"2025-09-19T20:05:17.334Z","userId":"65fbe574-c375-465f-ac1c-6ef78b42d4a2"}
+{"level":"debug","message":"Authenticated request","method":"GET","path":"/api/tasks","timestamp":"2025-09-19T20:05:17.354Z","userId":"65fbe574-c375-465f-ac1c-6ef78b42d4a2"}
+{"level":"debug","message":"Fetching tasks for user","timestamp":"2025-09-19T20:05:17.354Z","userId":"65fbe574-c375-465f-ac1c-6ef78b42d4a2"}
+{"level":"debug","message":"Tasks retrieved successfully","taskCount":3,"timestamp":"2025-09-19T20:05:17.354Z","userId":"65fbe574-c375-465f-ac1c-6ef78b42d4a2"}
+{"level":"info","message":"Tasks retrieved successfully","taskCount":3,"timestamp":"2025-09-19T20:05:17.355Z","userId":"65fbe574-c375-465f-ac1c-6ef78b42d4a2"}
+{"level":"debug","message":"User session retrieved","timestamp":"2025-09-19T20:06:00.289Z","userId":"65fbe574-c375-465f-ac1c-6ef78b42d4a2"}
+{"level":"debug","message":"Authenticated request","method":"GET","path":"/api/tasks","timestamp":"2025-09-19T20:06:00.304Z","userId":"65fbe574-c375-465f-ac1c-6ef78b42d4a2"}
+{"level":"debug","message":"Fetching tasks for user","timestamp":"2025-09-19T20:06:00.305Z","userId":"65fbe574-c375-465f-ac1c-6ef78b42d4a2"}
+{"level":"debug","message":"Tasks retrieved successfully","taskCount":3,"timestamp":"2025-09-19T20:06:00.306Z","userId":"65fbe574-c375-465f-ac1c-6ef78b42d4a2"}
+{"level":"info","message":"Tasks retrieved successfully","taskCount":3,"timestamp":"2025-09-19T20:06:00.307Z","userId":"65fbe574-c375-465f-ac1c-6ef78b42d4a2"}

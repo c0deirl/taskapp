@@ -1,8 +1,7 @@
-import { drizzle } from "drizzle-orm/neon-serverless";
-import { neon, neonConfig } from "@neondatabase/serverless";
+import { drizzle } from "drizzle-orm/better-sqlite3";
+import Database from "better-sqlite3";
 import * as schema from "../shared/schema";
 import { config } from "dotenv";
-import ws from "ws";
 import winston from 'winston';
 
 // Configure logger
@@ -27,24 +26,19 @@ export const logger = winston.createLogger({
 // Load environment variables from .env file
 config();
 
-// Configure WebSocket for Neon's serverless driver
-if (!process.env.NODE_ENV?.includes('production')) {
-  neonConfig.webSocketConstructor = ws;
-  logger.debug('Configured WebSocket for development environment');
-}
+// Create a SQLite database connection
+const sqlite = new Database('dev.db', {
+  verbose: console.log
+});
 
-// Create a persistent PostgreSQL connection
-let sql;
+// Initialize Drizzle with SQLite
+export const db = drizzle(sqlite, { schema });
+
 try {
-  sql = neon(process.env.DATABASE_URL || "", {
-    poolSize: 1,
-    connectionTimeoutMillis: 5000,
-  });
+  // Test database connection
+  db.select().from(schema.users).limit(1).all();
   logger.info('Database connection established successfully');
 } catch (error) {
   logger.error('Failed to establish database connection:', { error });
   throw error;
 }
-
-// Initialize Drizzle with the connection
-export const db = drizzle(sql, { schema });

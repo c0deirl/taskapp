@@ -27,7 +27,8 @@ const priorityConfig = {
 };
 
 export function PriorityBadge({ priority, className }: PriorityBadgeProps) {
-  const config = priorityConfig[priority];
+  // Default to medium priority if an invalid priority is provided
+  const config = priorityConfig[priority] || priorityConfig.medium;
   const Icon = config.icon;
   
   return (

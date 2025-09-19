@@ -78,13 +78,13 @@ export function TaskList({ tasks, onToggleTask, onEditTask, onDeleteTask, onCrea
         bValue = priorityOrder[b.priority];
         break;
       case "dueDate":
-        aValue = a.dueDate?.getTime() || 0;
-        bValue = b.dueDate?.getTime() || 0;
+        aValue = a.dueDate ? new Date(a.dueDate).getTime() : 0;
+        bValue = b.dueDate ? new Date(b.dueDate).getTime() : 0;
         break;
       case "createdAt":
       default:
-        aValue = a.createdAt.getTime();
-        bValue = b.createdAt.getTime();
+        aValue = new Date(a.createdAt).getTime();
+        bValue = new Date(b.createdAt).getTime();
         break;
     }
 

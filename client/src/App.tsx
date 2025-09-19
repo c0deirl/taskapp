@@ -274,7 +274,8 @@ function AppContent() {
                     <Button
                       variant="outline"
                       size="icon"
-                      onClick={() => auth.logout()}
+                      onClick={() => user.logout()}
+                      data-testid="button-logout"
                     >
                       <LogOut className="h-4 w-4" />
                     </Button>

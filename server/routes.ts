@@ -19,19 +19,38 @@ export async function registerRoutes(app: Express): Promise<Server> {
   app.post("/api/auth/login", async (req: Request, res: Response) => {
     const { username, password } = req.body;
     
-    // For demo purposes, accept any username/password
-    // In production, you would validate against a database
-    req.session.userId = username;
-    
-    logger.info('User logged in successfully', {
-      username,
-      sessionId: req.session.id
-    });
-    
-    return res.status(200).json({
-      id: username,
-      username
-    });
+    try {
+      // Try to find existing user
+      let user = await storage.getUserByUsername(username);
+      
+      // For demo purposes, create user if doesn't exist
+      if (!user) {
+        user = await storage.createUser({
+          username,
+          password // In production, this should be hashed
+        });
+        logger.info('Created new user', { username, userId: user.id });
+      }
+      
+      req.session.userId = user.id;
+      
+      logger.info('User logged in successfully', {
+        username,
+        userId: user.id,
+        sessionId: req.session.id
+      });
+      
+      return res.status(200).json({
+        id: user.id,
+        username: user.username
+      });
+    } catch (error) {
+      logger.error('Login failed', {
+        username,
+        error: error instanceof Error ? error.message : String(error)
+      });
+      return res.status(500).json({ message: "Login failed" });
+    }
   });
 
   app.post("/api/auth/logout", (req: Request, res: Response) => {
@@ -125,7 +144,10 @@ export async function registerRoutes(app: Express): Promise<Server> {
   // POST /api/tasks - Create a new task
   app.post("/api/tasks", requireAuth, async (req: Request, res: Response) => {
     try {
-      const validatedData = insertTaskSchema.parse(req.body);
+      const validatedData = insertTaskSchema.parse({
+        ...req.body,
+        userId: req.session.userId
+      });
       logger.debug('Creating new task', {
         userId: req.session.userId,
         taskData: validatedData
