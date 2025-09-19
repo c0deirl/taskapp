@@ -3,12 +3,20 @@ import { registerRoutes } from "./routes";
 import { setupVite, serveStatic, log } from "./vite";
 import { config } from "dotenv";
 import session from "express-session";
+import cors from 'cors';
 import { sql } from "@neondatabase/serverless";
 
 // Load environment variables from .env file
 config();
 
 const app = express();
+
+// CORS configuration
+app.use(cors({
+  origin: true, // Allow all origins in development
+  credentials: true // Allow credentials (cookies)
+}));
+
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
@@ -19,7 +27,10 @@ app.use(session({
   saveUninitialized: false,
   cookie: {
     secure: process.env.NODE_ENV === 'production',
-    maxAge: 24 * 60 * 60 * 1000 // 24 hours
+    maxAge: 24 * 60 * 60 * 1000, // 24 hours
+    sameSite: 'none', // Allow cross-site cookie
+    httpOnly: true, // Prevent XSS
+    path: '/' // Allow access from any path
   }
 }));
 

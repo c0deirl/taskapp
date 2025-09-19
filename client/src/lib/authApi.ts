@@ -10,9 +10,12 @@ export interface User {
   username: string;
 }
 
+// Use the same base URL as the main API
+const API_BASE_URL = process.env.VITE_API_URL || '/api';
+
 const authApi = axios.create({
-  baseURL: '/api/auth',
-  withCredentials: true
+  baseURL: `${API_BASE_URL}/auth`,
+  withCredentials: true // Required for cross-origin requests with credentials
 });
 
 export const auth = {
