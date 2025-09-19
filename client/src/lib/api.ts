@@ -1,5 +1,6 @@
 import axios from 'axios';
 import { type Task } from '@/components/TaskCard';
+import { auth } from './authApi';
 
 const api = axios.create({
   baseURL: '/api',
@@ -9,9 +10,14 @@ const api = axios.create({
 // Add response interceptor to handle unauthorized responses
 api.interceptors.response.use(
   (response) => response,
-  (error) => {
+  async (error) => {
     if (error.response?.status === 401) {
-      // Redirect to login page if unauthorized
+      // Clear session and redirect to login
+      try {
+        await auth.logout();
+      } catch (e) {
+        console.error('Failed to logout:', e);
+      }
       window.location.href = '/login';
     }
     return Promise.reject(error);
